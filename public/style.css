@@ -1,9 +1,44 @@
-/*Cabeçalho*/
-header img {
-    width: 150px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*CABEÇALHO*/
+header {
+    display: flex; /* Transformando contatiner em FLEXIVEL. */
+    align-items: center; /* Alinha os itens ao centro do CONTAINER.*/
+    background-color: #00008B; /* Dar cor ao fundo do Cabeçalho.*/
 }
 
-/*Advogados*/
-.advogado img {
-    width: 300px;
+.logo img {
+    max-width: 100%; /* Não deixa que a imagem se torne maior que seu container.*/
+    width: 100px; /* Definindo a largura da IMG.*/
+}
+
+/* Menu de navegação.*/
+nav ul {
+    list-style-type: none; /* Remove os marcadores da LISTA.*/
+    margin: 0; /* Remove a margim padrão.*/
+    padding: 0; /* Remove o padding padrão.*/
+    overflow: hidden; /* Impede que o conteúdo exceda o tamanho do seu contêiner. */
+    background-color: #333; /* Define a cor de fundo do menu de navegação para um cinza-escuro.*/
+}
+
+/* Lista dentro do Menu de navegação*/
+nav ul li {
+    float: left; /* Posiciona os itens do menu lado a lado horizontalmente.*/
+}
+
+/* Links dentro da LISTA.*/
+nav ul li a {
+    display: block; /* Faz o link preencher todo o espaço do <li>.*/
+    color: white; /* Definindo a cor do texto em branco.*/
+    text-align: center; /* Centralizando o txto dentro do link.*/
+    padding: 14px 16px; /* Adciona espaço dentro do link para torná-lo mais clicável.*/
+    text-decoration: none; /* Limpa todas as decorações que o texto pode ter. */
+}
+
+/* Quando o mouse passa sobre o LINK.*/
+nav ul li a:hover {
+    background-color: #111; /* Muda a cor de fundo do item quando o mouse passa sobre ele.*/
 }
