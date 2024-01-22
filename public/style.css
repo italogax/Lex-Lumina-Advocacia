@@ -6,13 +6,20 @@
 /*CABEÇALHO*/
 header {
     display: flex; /* Transformando contatiner em FLEXIVEL. */
-    align-items: center; /* Alinha os itens ao centro do CONTAINER.*/
+    align-items: end; /* Alinha os itens ao centro do CONTAINER.*/
+    justify-content: space-between; /* Distribui o espaço entre os itens dentro do footer. */
     background-color: #00008B; /* Dar cor ao fundo do Cabeçalho.*/
 }
 
+/* Editando a div da LOGO. */
+.logo {
+    display: flex; /* Transformando contatiner em FLEXIVEL. */
+    align-items: center; /* Alinha os itens ao centro do CONTAINER.*/
+}
+
 .logo img {
-    max-width: 100%; /* Não deixa que a imagem se torne maior que seu container.*/
-    width: 100px; /* Definindo a largura da IMG.*/
+    max-width: 100px; /* Não deixa que a imagem se torne maior que seu container.*/
+    padding: 2px; /* Adcionando um padding a logo.*/
 }
 
 /* Menu de navegação.*/
@@ -42,3 +49,31 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #111; /* Muda a cor de fundo do item quando o mouse passa sobre ele.*/
 }
+
+
+/* Rodapé */
+footer {
+    background-color: #00008B; /* Adcionando cor ao fundo do rodapé. */
+    color: white; /* Colocando cor a fontes utilizadas no rodapé. */
+    text-align: center; /* Alinhando o texto ao centro do Footer. */
+    padding: 20px 0; /* Adciona espaço interno(padding) no topo e na base do footer. */
+}
+
+/* Editando icones do Rodapé */
+.social-icons {
+    text-align: center; /* Alinhando o os links ao centro. */
+    padding: 10px 0; /* Adicionando espaço superior e inferior. */
+}
+
+/* Editando icones. */
+.social-icons img {
+    margin: 0 10px; /* Defindindo a margem externa para cada ícone. */
+    width: 30px; /* Definindo a largura de cada ITEM. */
+    height: auto; /* Garantindo que a altura se ajuste automaticamente. */
+}
+
+/* Passando o cursor sobre os ICONES. */
+.social-icons img:hover {
+    opacity: 0.7; /* Reduz a opacidade para 70% quando passa o cursor sobre. */
+}
+
