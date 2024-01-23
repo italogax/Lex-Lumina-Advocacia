@@ -1,79 +1,59 @@
+/* Edição geral */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0; /* Removendo todo o espaçamento interno da página. */
+    margin: 0; /* Removendo todas as margens da página. */
 }
-/*CABEÇALHO*/
+
+/* Cabeçalho */
 header {
-    display: flex; /* Transformando contatiner em FLEXIVEL. */
-    align-items: end; /* Alinha os itens ao centro do CONTAINER.*/
-    justify-content: space-between; /* Distribui o espaço entre os itens dentro do footer. */
-    background-color: #00008B; /* Dar cor ao fundo do Cabeçalho.*/
+    display: flex; /* Deixando o container flexível. */
+    justify-content: space-between; /* Distribuindo o espaço uniformente entre os itens. */
+    align-items: end; /* Alinhando os itens ao final do header. */
+    background-color: #1a1a1a; /* Cor de fundo. */
+    color: white; /* Cor do texto. */
+    text-align: center; /* Alinhando texto ao centro  */
 }
 
-/* Editando a div da LOGO. */
-.logo {
-    display: flex; /* Transformando contatiner em FLEXIVEL. */
-    align-items: center; /* Alinha os itens ao centro do CONTAINER.*/
+/* Link dentro da Classe logo. */
+header .logo a {
+    margin: 0 9px; /* Adcionando margem lateral ao link. */
+    display: inline-block; /* Faz o link comportar-se como um bloco, mas alinha como um texto. */
 }
 
-.logo img {
-    max-width: 100px; /* Não deixa que a imagem se torne maior que seu container.*/
-    padding: 2px; /* Adcionando um padding a logo.*/
+/* Imagems da logo */
+header .logo a img {
+    max-height: 80px; /* Altura maxima para imagem da logo. */
+    width: auto; /* Ajuste automatico da largura. */
 }
 
-/* Menu de navegação.*/
-nav ul {
-    list-style-type: none; /* Remove os marcadores da LISTA.*/
-    margin: 0; /* Remove a margim padrão.*/
-    padding: 0; /* Remove o padding padrão.*/
-    overflow: hidden; /* Impede que o conteúdo exceda o tamanho do seu contêiner. */
-    background-color: #333; /* Define a cor de fundo do menu de navegação para um cinza-escuro.*/
+/* Barra de navegação dentro do cabeçalho. */
+header nav { 
+    margin: 10px; /* Adciona uma margem a barra de navegação */
 }
 
-/* Lista dentro do Menu de navegação*/
-nav ul li {
-    float: left; /* Posiciona os itens do menu lado a lado horizontalmente.*/
+/* Lista ne navegação */
+header nav ul {
+    list-style-type: none; /* Remove os marcadores da lista. */
+    padding: 0px; /* Removendo o padding padrão da lista. */
+    margin: 0; /* Removendo a margem padrão da lista. */
+    display: flex; /* Faz os componentes ficarem flexiveis. */
+    justify-content: center; /* Centraliza os intens da lista. */
 }
 
-/* Links dentro da LISTA.*/
-nav ul li a {
-    display: block; /* Faz o link preencher todo o espaço do <li>.*/
-    color: white; /* Definindo a cor do texto em branco.*/
-    text-align: center; /* Centralizando o txto dentro do link.*/
-    padding: 14px 16px; /* Adciona espaço dentro do link para torná-lo mais clicável.*/
-    text-decoration: none; /* Limpa todas as decorações que o texto pode ter. */
+/* Link dentro do Cabeçalho */
+header nav ul li a {
+    background-color: #333; /* Cor do fundo */
+    color: white; /* Cor dos links. */
+    text-decoration: none; /* Remove os efeitos nos links */
+    margin: 1px; /* Adciona margens laterais nos links. */
+    padding: 10px; /* Adcionando espaçamento interno. */
 }
 
-/* Quando o mouse passa sobre o LINK.*/
-nav ul li a:hover {
-    background-color: #111; /* Muda a cor de fundo do item quando o mouse passa sobre ele.*/
+/* Quando passa o mouse sobre os links. */
+header nav ul li a:hover {
+    background-color: black;
+    color: #f0db4f; /* Cor dos links ao passar o cursor. */;
 }
-
 
 /* Rodapé */
-footer {
-    background-color: #00008B; /* Adcionando cor ao fundo do rodapé. */
-    color: white; /* Colocando cor a fontes utilizadas no rodapé. */
-    text-align: center; /* Alinhando o texto ao centro do Footer. */
-    padding: 20px 0; /* Adciona espaço interno(padding) no topo e na base do footer. */
-}
-
-/* Editando icones do Rodapé */
-.social-icons {
-    text-align: center; /* Alinhando o os links ao centro. */
-    padding: 10px 0; /* Adicionando espaço superior e inferior. */
-}
-
-/* Editando icones. */
-.social-icons img {
-    margin: 0 10px; /* Defindindo a margem externa para cada ícone. */
-    width: 30px; /* Definindo a largura de cada ITEM. */
-    height: auto; /* Garantindo que a altura se ajuste automaticamente. */
-}
-
-/* Passando o cursor sobre os ICONES. */
-.social-icons img:hover {
-    opacity: 0.7; /* Reduz a opacidade para 70% quando passa o cursor sobre. */
-}
 
