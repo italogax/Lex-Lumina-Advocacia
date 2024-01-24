@@ -56,4 +56,41 @@ header nav ul li a:hover {
 }
 
 /* Rodapé */
+footer {
+    background-color: #1a1a1a; /* Cor do fundo. */
+    color: white; /* Cor da fonte. */
+    text-align: center; /* Centralizando o texto. */
+    padding: 20px 0; /* Espaçamento no topo e na base. */
+}
+
+/* Parágrafo dentro do Rodapé */
+footer p {
+    margin: 0 0 10px; /* Margem na base do parágrafo. */
+}
+
+/* Classe dos ícones */
+footer .social-icons {
+    display: flex; /* Deixando o container flexivel. */
+    justify-content: center; /* Centralizando itens. */
+    gap: 20px; /* Espaçamento entre ícones. */
+}
+
+/* Links dentro da classe ícones. */
+footer .social-icons a {
+    display: flex; /* Transformando o container em flexivel. */
+    align-items: center; /* Alinhando ícones ao centro. */
+    justify-content: center; /* Centralizando os intens horizontalmente. */
+    padding: 6px; /* Espaçamento interno dos ítens. */
+    color: rgb(176, 176, 176); /* Cor do texto dos links. */
+    
+    transition: background 0.2s; /* Efeito de transição no background. Temp: 2s. */
+    border-radius: 50%; /* Deixando as bordas arredondadas. */
+}
+
+/* Efeito passando o cursor sobre os links. */
+footer .social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor do fundo */
+}
+
+
 
