@@ -2,6 +2,7 @@
 * {
     padding: 0; /* Removendo todo o espaçamento interno da página. */
     margin: 0; /* Removendo todas as margens da página. */
+    font-family: 'Open', sans-serif;
 }
 
 /* Cabeçalho */
@@ -54,6 +55,40 @@ header nav ul li a:hover {
     background-color: black;
     color: #f0db4f; /* Cor dos links ao passar o cursor. */;
 }
+
+/* SECTION- sobre nós */
+section.sobre-nos {
+    background-color: #f5f5f5; /* Adcionando cor ao fundo. */
+    padding: 20px; /* Adcionando espaço insterno em todos os lados. */
+    text-align: center; /* Centralizando todo o texto. */
+    margin: 0 auto; /* Centraliza a seção. Ajusta as margens laterais automaticamente. */
+}
+
+/* Estilização para centralizar toda a SECTION */
+section.sobre-nos h2, section.sobre-nos h4, section.sobre-nos p {
+    margin-left: auto; /*  */
+    margin-right: auto;
+    width: 80%; /* Define a largura do conteúdo para 80% da seção */
+}
+
+/* Título da Section */
+section.sobre-nos h2 {
+    color: #333; /* Cor do título. */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Subtítulo da Section */
+section.sobre-nos h4 {
+    color: #666; /* Cor do título. */
+    margin-bottom: 15px; /* Espaço abaixo do subtítulo. */
+}
+
+/* Texto da Section */
+section.sobre-nos p {
+    color: #333; /* Cor do texto. */
+    line-height: 1.6; /* Espaçamento entre linhas do parágrafo. */
+}
+
 
 /* Rodapé */
 footer {
