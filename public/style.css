@@ -57,7 +57,7 @@ header nav ul li a:hover {
 }
 
 /* SECTION- sobre nós */
-section.sobre-nos {
+section#sobre-nos {
     background-color: #f5f5f5; /* Adcionando cor ao fundo. */
     padding: 20px; /* Adcionando espaço insterno em todos os lados. */
     text-align: center; /* Centralizando todo o texto. */
@@ -65,30 +65,77 @@ section.sobre-nos {
 }
 
 /* Estilização para centralizar toda a SECTION */
-section.sobre-nos h2, section.sobre-nos h4, section.sobre-nos p {
-    margin-left: auto; /*  */
-    margin-right: auto;
+section#sobre-nos h2, section#sobre-nos h4, section#sobre-nos p {
+    margin-left: auto; /* Controlando a margin DIREITA automaticamente. */
+    margin-right: auto; /* Controlando a margin ESQUERDA automaticamente. */
     width: 80%; /* Define a largura do conteúdo para 80% da seção */
 }
 
 /* Título da Section */
-section.sobre-nos h2 {
+section#sobre-nos h2 {
     color: #333; /* Cor do título. */
     margin-bottom: 10px; /* Espaço abaixo do título */
 }
 
 /* Subtítulo da Section */
-section.sobre-nos h4 {
+section#sobre-nos h4 {
     color: #666; /* Cor do título. */
     margin-bottom: 15px; /* Espaço abaixo do subtítulo. */
 }
 
 /* Texto da Section */
-section.sobre-nos p {
+section#sobre-nos p {
     color: #333; /* Cor do texto. */
     line-height: 1.6; /* Espaçamento entre linhas do parágrafo. */
 }
 
+/* Section Advogados */
+section#advogados {
+    display: flex; /* Deixando o container Flexivel. */
+    justify-content: center; /* Centralizando os itens horizontalmente. */
+    flex-wrap: wrap; /*Permite os itens passarem para proxima linha quando não cabem. */
+    background-color: #ffffff; /* Adcionando cor de fundo. */
+    padding: 20px; /* Espaçamento interno em todos os lados. */
+    text-align: center; /* Texto alinhado ao centro. */
+}
+
+/* Titulo Advogados */
+section#advogados h2 {
+    width: 100%; /* Garantindo que a largura do tamanho da classe. */
+    color: #333; /* Cor do texto. */
+    margin-bottom: 20px; /* Espaço abaixo do título. */
+}
+
+/* Conteúdo de um unico Advogado */
+.advogado {
+    display: inline-block; /* Alinha os advogados lado a lado. */
+    margin: 10px; /* Espaçamento ao redor de cada advogado */
+    width: 300px; /* Largura do perfil. */
+}
+
+/* Imagem do Advogado */
+.advogado img {
+    width: 100%; /* Largura da imagem para se ajustar ao container. */
+    border-radius: 50%; /* Deixa a imagem circular. */
+    border: 2px solid #1a1a1a;
+    margin-bottom: 10px; /* Margin na parte inferior. */
+}
+
+/* Nome do Advogado */
+.advogado h3 {
+    color: #666; /* Cor do nome do Advogado. */
+}
+
+/* Área de atuação do advogado */
+.advogado h4 {
+    margin-top: 10px; /* Margem superior. */
+    margin-bottom: 5px; /* Margem inferior. */
+}
+/* Texto da section Advogado */
+.advogado p {
+    color: #999; /* Cor do texto. */
+    text-align: justify; /* Deixando o texto justificado. */
+}
 
 /* Rodapé */
 footer {
