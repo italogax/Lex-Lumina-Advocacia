@@ -1,5 +1,8 @@
 # Projeto Advocacia Digital
-![Logo do Projeto](./static/componentsGraphics/logo.png)
+
+<div align="center">
+    <img src="./static/componentsGraphics/logo.png" width="500" height="500">
+</div>
 
 ## 📝 Descrição
 Este projeto visa fornecer uma plataforma digital para escritórios de advocacia, facilitando a gestão de casos, atendimento ao cliente e apresentação dos serviços jurídicos oferecidos. O site inclui funcionalidades de validação de formulários para garantir a captura de informações corretas dos clientes.
