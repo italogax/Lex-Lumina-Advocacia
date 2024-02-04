@@ -2,7 +2,7 @@
 * {
     padding: 0; /* Removendo todo o espaçamento interno da página. */
     margin: 0; /* Removendo todas as margens da página. */
-    font-family: 'Open', sans-serif;
+    font-family: 'Open', sans-serif; /* Define a família de fontes com 'Open' como primeira escolha e 'sans-serif' como alternativa */
 }
 
 /* Cabeçalho */
@@ -190,15 +190,15 @@ section#advogados h2 {
 }
 
 /* Formulário de CONTATO */
-#contato form {
+#contato #meuFormulario {
     max-width: 500px; /* Largura máximado formulário. */
     margin: auto; /* Centraliza o formulario na seção. */
 }
 
 /* Areas de entrada de dados e textos */
-#contato input, #contato textarea {
+#meuFormulario input, #meuFormulario textarea {
     width: 100%; /* Largura completa dentro do formulário. */
-    padding: 10px; /* Espaçamento interno para entrada de texto. */
+    padding: 10px 0px; /* Espaçamento interno para entrada de texto. */
     margin-bottom: 15px; /* Espaço abaixo de cada campo. */
     border: 1px solid #ccc; /* Borda sutil para os campos. */
     border-radius: 5px; /* Bordas levemente arredondadas. */
@@ -258,5 +258,53 @@ footer .social-icons a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Cor do fundo */
 }
 
+/* Media Queries para responsividade em aparelhos com tela reduzida. */
+@media (max-width: 768px) {
 
+    /* Edição no cabeçalho */
+    header {
+        display: flex; /* Tornando o container Flexível. */
+        flex-direction: column; /* Define a direção de flexão como vertical. */
+        align-items: center; /* Alinhando itens ao centro. */
+    }
+
+    /* Edição na logo */
+    header .logo {
+        transform: scale(1.2); /* Aumenta o elemento em 20%. */
+        display: flex; /* Tornando container Flexível. */
+        justify-content: center; /* Centralizando conteúdo horizontalmente no elemento flex. */
+        align-items: center; /* Alinhando os itens ao centro. */
+        margin-top: 10px; /* Adicionando uma margem ao topo da imagem. */
+        margin-bottom: 10px; /* Adicionando uma margem ao campo inferior da imamgem. */
+    }
+    
+    /* Edição da barra de navegação  */
+    header nav {
+        margin: 0; /* Removendo toda a margem */
+        margin-bottom: 1px; /* Adcionando margin inferior na barra de navegação. */
+        width: 100%; /* Define a largura de 100% para o elemento 'nav'. */
+    }
+
+    /* Edição das listas não ordenadas */
+    header nav ul {
+        display: flex; /* Tornando o container flexível.  */
+        flex-wrap: wrap; /* Permitem que os itens da lista quebrem para a próxima linha. */
+        justify-content: center; /* Cetralizando itens horizontamente. */
+        padding: 0; /* Removendo preenchimento padrão. */
+        margin: 0; /* Removendo margens padrão da lista. */
+    }
+
+    /* Edição do item na lista */
+    header nav ul li {
+        width: 50%; /* Define a largunra maxima de 50% para os itens da lista 'li'. */
+        margin: 0px; /* Define margem zero para os itens da lista 'li'. */
+    }
+
+    /* Edição do link */
+    header nav ul li a {
+        display: block; /* Define os elementos como bloco. */
+        text-align: center; /* Centraliza o texto. */
+        margin: 1px; /* Adcionando margem de 1px. */
+    }
+}
 
