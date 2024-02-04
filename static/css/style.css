@@ -117,7 +117,7 @@ section#advogados h2 {
 .advogado img {
     width: 100%; /* Largura da imagem para se ajustar ao container. */
     border-radius: 50%; /* Deixa a imagem circular. */
-    border: 2px solid #1a1a1a;
+    border: 2px solid #1a1a1a; /* Adicionando bora a imagem. */
     margin-bottom: 10px; /* Margin na parte inferior. */
 }
 
